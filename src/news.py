@@ -22,8 +22,8 @@ def returnRandomElement():
 
 def main():
     tk.Label(root,text="Yahoo News",font=("Helvetica", 36)).grid(row=0)
-    for i in range(2):
-        tk.Label(root,text=returnRandomElement(),wraplength=500,font=("Helvetica", 20)).grid(row=i+1)
+    for i in range(3):
+        tk.Label(root,text=returnRandomElement(),wraplength=500,font=("Helvetica", 18)).grid(row=i+1)
 
 
 main()
