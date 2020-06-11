@@ -1,7 +1,7 @@
 import tkinter as tk
 import requests
 import bs4
-from random import choices
+from random import choice
 
 # main tkinter window
 root = tk.Tk()
@@ -16,7 +16,8 @@ pTags = [i.getText() for i in soup.find_all("p")]
 
 # random element from pTags
 def returnRandomElement():
-    randElement = [i.strip(" ") for i in choices(pTags)]
+    # randElement = [i.strip() for i in choices(pTags)]
+    randElement = choice(pTags)
     return randElement
 
 def main():
