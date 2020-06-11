@@ -20,7 +20,7 @@ def returnRandomElement():
     return randElement
 
 def main():
-    tk.Label(root,text="Yahoo News",font=("Helvetica", 45),background="gold").grid(row=0,ipadx=100)
+    tk.Label(root,text="Yahoo News",font=("Helvetica", 45),background="gold").grid(row=0,ipadx=110)
     for i in range(2):
         tk.Label(root,text=returnRandomElement(),wraplength=500,font=("Helvetica", 20), background="whitesmoke").grid(row=i+1)
     tk.Button(root, text="Exit",command=root.destroy,font=("Helvetica", 22)).grid(row=1,column=2)
