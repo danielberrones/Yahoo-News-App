@@ -14,16 +14,16 @@ r = requests.get(url)
 soup = bs4.BeautifulSoup(r.text,'lxml')
 pTags = [i.getText() for i in soup.find_all("p")]
 
-# random element from pTags
+# return random <p> tag
 def returnRandomElement():
-    # randElement = [i.strip() for i in choices(pTags)]
     randElement = choice(pTags)
     return randElement
 
 def main():
-    tk.Label(root,text="Yahoo News",font=("Helvetica", 40),background="gold").grid(row=0)
+    tk.Label(root,text="Yahoo News",font=("Helvetica", 45),background="gold").grid(row=0,ipadx=100)
     for i in range(2):
         tk.Label(root,text=returnRandomElement(),wraplength=500,font=("Helvetica", 20), background="whitesmoke").grid(row=i+1)
+    tk.Button(root, text="Exit",command=root.destroy,font=("Helvetica", 22)).grid(row=1,column=2)
 
 
 main()
