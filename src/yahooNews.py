@@ -5,6 +5,7 @@ from random import choice
 
 # main tkinter window
 root = tk.Tk()
+root.title("Yahoo News App")
 
 # requests object
 url = "http://www.yahoo.com/news"
