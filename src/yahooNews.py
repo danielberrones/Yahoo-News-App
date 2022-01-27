@@ -8,7 +8,7 @@ root = tk.Tk()
 root.title("Yahoo News App")
 
 # requests object
-url = "http://www.yahoo.com/news"
+url = "https://www.yahoo.com/news"
 r = requests.get(url)
 
 # soup object
