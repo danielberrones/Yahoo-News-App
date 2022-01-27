@@ -1,7 +1,7 @@
-import tkinter as tk
-import requests
 import bs4
+import requests
 from random import choice
+import tkinter as tk
 
 # main tkinter window
 root = tk.Tk()
